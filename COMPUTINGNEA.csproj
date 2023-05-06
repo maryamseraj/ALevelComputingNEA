@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Net.Http.Headers" Version="2.2.8" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="MathNet.Numerics" />
+    <None Remove="Microsoft.Net.Http.Headers" />
+    <None Remove="System.Net.Http" />
+    <None Remove="Microsoft.AspNetCore.Http" />
+    <None Remove="Microsoft.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Views\Home\CustomMG%3Fcshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+    <None Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Home\pagee.aspx">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Home\CustomMG.cshtml" />
+    <Content Remove="Views\Home\pagee.cshtml" />
+  </ItemGroup>
+</Project>
