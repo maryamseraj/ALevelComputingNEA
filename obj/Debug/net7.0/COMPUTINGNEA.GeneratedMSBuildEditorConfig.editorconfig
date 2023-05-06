@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = COMPUTINGNEA
+build_property.RootNamespace = COMPUTINGNEA
+build_property.ProjectDir = /Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/Account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/AddCustomMG.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZGRDdXN0b21NRy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/AddInvestment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZGRJbnZlc3RtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/ConfirmationError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db25maXJtYXRpb25FcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/IncorrectPasswordError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmNvcnJlY3RQYXNzd29yZEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/InvestmentNotFoundError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbnZlc3RtZW50Tm90Rm91bmRFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/LoginError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Mb2dpbkVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9SZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/RegistrationError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9SZWdpc3RyYXRpb25FcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/UpdateInvestment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9VcGRhdGVJbnZlc3RtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/UpdateMG.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9VcGRhdGVNRy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Home/ViewInvestments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9WaWV3SW52ZXN0bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/maryamseraj/Projects/COMPUTINGNEA/COMPUTINGNEA/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

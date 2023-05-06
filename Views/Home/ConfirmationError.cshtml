@@ -1,0 +1,34 @@
+﻿@model User
+@{
+    ViewData["Title"] = "ConfirmationError";
+}
+
+<!DOCTYPE html>
+<h1>Error: Passwords do not match.</h1>
+<button id="back-btn" onclick="window.location.href='@Url.Action("Registration", "Home")'">Return</button>
+<style>
+    h1 {
+        color: red;
+        text-align: center;
+        margin: auto;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    #back-btn {
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        display: flex;
+        display: grid;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: grey;
+        border-color: black;
+        opacity: 0.75;
+    }
+
+        #back-btn:hover {
+            opacity: 0.6;
+        }
+</style>

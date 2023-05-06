@@ -1,0 +1,65 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Custom";
+}
+
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Add custom market growth </title>
+    <style>
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: white;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: lightgrey;
+            width: 100%;
+            color: black;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+
+        form {
+            border: 3px solid black;
+        }
+
+        input[type=text], input[type=password], input[type=email] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+
+
+        .container {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center> <h1> User Registration </h1> </center>
+    <form asp-controller="Home" asp-action="AddCustomMarketGrowth" method="post">
+        <div class="container">
+            <label>Enter a new industry: </label>
+            <input type="text" placeholder="Industry" name="CustomIndustry" required>
+
+            <label>Enter custom market growth: </label>
+            <input type="text" placeholder="Market growth percentage" name="CustomMarketGrowth" required>
+
+        </div>
+    </form>
+</body>
+

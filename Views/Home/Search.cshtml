@@ -1,0 +1,106 @@
+﻿@model IEnumerable<COMPUTINGNEA.Models.Investment>
+@{
+    ViewBag.Title = "Search";
+}
+
+<!DOCTYPE html>
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Investment Name</th>
+        <th>Date of Investment</th>
+        <th>Industry</th>
+        <th>Amount Invested</th>
+        <th>Ivestment Return</th>
+        <th>Update Investment</th>
+    </tr>
+
+
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.InvestmentName</td>
+            <td>@d.InvestmentDate</td>
+            <td>@d.Industry</td>
+            <td>@d.AmountInvested</td>
+            <td>@d.InvestmentReturn</td>
+            <td type="submit" onclick="window.location.href='@Url.Action("UpdateInvestment", "Home")'">Update</td>
+        </tr>
+
+    }
+</table>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="~/Home/AddInvestment">Add Investment</a>
+    <a href="~/Home/ViewInvestments">View Investments</a>
+    <a href="~/Home/Account">Account</a>
+    <a href="~/Home/About">About</a>
+    <a href="~/Home/Index">Logout</a>
+</div>
+
+<div id="main">
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <center> <h1> Investment details</h1> </center>
+    <h1 style="text-align: center; margin: auto;"></h1>
+</div>
+
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        float: left;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+</style>
+
+<script>function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+
+
+    }</script>

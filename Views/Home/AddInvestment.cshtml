@@ -1,0 +1,176 @@
+﻿@model Investment
+@{
+    ViewData["Title"] = "AddInvestment";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Add Investment </title>
+    <style>
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        button {
+            background-color: lightgrey;
+            width: 100%;
+            color: black;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+
+        form {
+            border: 3px solid black;
+        }
+
+        input[type=text], input[type=password], input[type=email] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+
+
+        .container {
+            padding: 25px;
+        }
+
+        .a {
+            color: blue;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+        }
+    </style>
+</head>
+<body>
+<center> <h1>Add Investment</h1> </center>
+
+<form asp-controller="Home" asp-action="GetInvestmentDetails" method="post">
+    <div class="container">
+        <input type="text" placeholder="Investment name" name="InvestmentName" required>
+        <label for="cars">Date of Investment:</label>
+        <input type="date" placeholder="Date of Investment" name="InvestmentDate" required>
+        <label for="cars">Industry:</label>
+        <select name="Industry">
+            <option value="Advertising">Advertising</option>
+            <option value="Aerospace">Aerospace</option>
+            <option value="Air transport">Air transport</option>
+            <option value="Apparel">Apparel</option>
+            <option value="Auto & Truck">Auto & Truck</option>
+            <option value="Auto parts">Auto parts</option>
+            <option value="Bank (Money Center)">Bank (Money Center)</option>
+            <option value="Banks (regional)">Banks (regional)</option>
+            <option value="Beverage (Alcoholic)">Beverage (Alcoholic)</option>
+            <option value="Beverage (Soft)">Beverage (Soft)</option>
+            <option value="Broadcasting">Broadcasting</option>
+            <option value="Brokerage & Investment Banking">Brokerage & Investment Banking</option>
+            <option value="Building Materials">Building Materials</option>
+            <option value="Business & Consumer Services">Business & Consumer Services</option>
+            <option value="Cable TV">Cable TV</option>
+            <option value="Chemical (Basic)">Chemical (Basic)</option>
+            <option value="Chemical (Diversified)">Chemical (Diversified)</option>
+            <option value="Chemical (Speciality)">Chemical (Speciality)</option>
+            <option value="Coal & Related Energy">Coal & Related Energy</option>
+            <option value="Computer Services">Computer Services</option>
+            <option value="Computers/Peripherals">Computers/Peripherals</option>
+            <option value="Construction Supplies">Construction Supplies</option>
+            <option value="Diversified">Diversified</option>
+            <option value="Drugs (Biotechnology)">Drugs (Biotechnology)</option>
+            <option value="Drugs (Pharamceutical)">Drugs (Pharamceutical)</option>
+            <option value="Education">Education</option>
+            <option value="Electrical Equipment">Electrical Equipment</option>
+            <option value="Electronics (Consumer & Office)">Electronics (Consumer & Office)</option>
+            <option value="Electronics (General)">Electronics (General)</option>
+            <option value="Engineering/Construction">Engineering/Construction</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Environmental & Waste Services">Environmental & Waste Services</option>
+            <option value="Farming/Agriculture">Farming/Agriculture</option>
+            <option value="Financial Services">Financial Services</option>
+            <option value="Food Processing">Food Processing</option>
+            <option value="Food Wholesalers">Food Wholesalers</option>
+            <option value="Furn/Home Furnishings">Furn/Home Furnishings</option>
+            <option value="Green & Renewable Energy">Green & Renewable Energy</option>
+            <option value="Healthcare Products">Healthcare Products</option>
+            <option value="Healthcare Support Services">Healthcare Support Services</option>
+            <option value="Healthcare Information and Technology">Healthcare Information and Technology</option>
+            <option value="Homebuilding">Homebuilding</option>
+            <option value="Hospitals/Healthcare Facilities">Hospitals/Healthcare Facilities</option>
+            <option value="Hotel/Gaming">Hotel/Gaming</option>
+            <option value="Household Products">Household Products</option>
+            <option value="Information Services">Information Services</option>
+            <option value="Insurance (General)">Insurance (General)</option>
+            <option value="Insurance (Life)">Insurance (Life)</option>
+            <option value="Insurance (Props/Cas.)">Insurance (Props/Cas.)</option>
+            <option value="Investments & Asset Management">Investments & Asset Management</option>
+            <option value="Machinery">Machinery</option>
+            <option value="Metals & Mining">Metals & Mining</option>
+            <option value="Office Equipment & Services">Office Equipment & Services</option>
+            <option value="Oil/Gas (Integrated)">Oil/Gas (Integrated)</option>
+            <option value="Oil/Gas (Production and Exploration)">Oil/Gas (Production and Exploration)</option>
+            <option value="Oil/Gas Distribution">Oil/Gas Distribution</option>
+            <option value="Oilfield Svcs/Equip.">Oilfield Svcs/Equip</option>
+            <option value="Packaging & Container">Packaging & Container</option>
+            <option value="Paper/forest Products">Paper/forest Products</option>
+            <option value="Power">Power</option>
+            <option value="Precious Metals">Precious Metals</option>
+            <option value="Publishing and Newspapers">Publishing and Newspapers</option>
+            <option value="R.E.I.T">R.E.I.T</option>
+            <option value="Real Estate (Development)">Real Estate (Development)</option>
+            <option value="Real Estate (General/Diversified)">Real Estate (General/Diversified)</option>
+            <option value="Real Estate (Operations & Services)">Real Estate (Operations & Services)</option>
+            <option value="Recreation">Recreation</option>
+            <option value="Reinsurance">Reinsurance</option>
+            <option value="Restaurant/Dining">Restaurant/Dining</option>
+            <option value="Retail (Automotive)">Retail (Automotive)</option>
+            <option value="Retail (Building Supply)">Retail (Building Supply)</option>
+            <option value="Retail (Distributors)">Retail (Distributors)</option>
+            <option value="Retail (General)">Retail (General)</option>
+            <option value="Retail (Grocery and Food)">Retail (Grocery and Food)</option>
+            <option value="Retail (Online)">Retail (Online)</option>
+            <option value="Retail (Special Lines)">Retail (Special Lines)</option>
+            <option value="Rubber & Tires">Rubber & Tires</option>
+            <option value="Semiconductor">Semiconductor</option>
+            <option value="Semiconductor Equip">Semiconductor Equip</option>
+            <option value="Shipbuilding & Marine">Shipbuilding & Marine</option>
+            <option value="Shoe">Shoe</option>
+            <option value="Software (Entertainment)">Software (Entertainment)</option>
+            <option value="Software (Internet)">Software (Internet)</option>
+            <option value="Software (System & Application">Software (System & Application</option>
+            <option value="Steel">Steel</option>
+            <option value="Telecom (Wireless)">Telecom (Wireless)</option>
+            <option value="Telecom. Equipment">Telecom. Equipment</option>
+            <option value="Telecom. Services">Telecom. Services</option>
+            <option value="Tobacco">Tobacco</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Transportaion (Railroads)">Transportaion (Railroads)</option>
+            <option value="Trucking">Trucking</option>
+            <option value="Utility (General)">Utility (General)</option>
+            <option value="Utility (Water)">Utility (Water)</option>
+        </select>
+        <button type="submit" onclick="window.location.href='@Url.Action("AddCustomMG", "Home")'">Add custom market growth</button>
+        <button type="submit" onclick="window.location.href='@Url.Action("UpdateMG", "Home")'">Update existing market growth</button>
+
+        <br />
+        <input type="number" placeholder="Amount invested" name="AmountInvested" required>
+        <input type="number" placeholder="Revenue" name="Revenue" required>
+        <input type="number" placeholder="Profit" name="Profit" required>
+        <button type="submit">Add Investment</button>
+    </div>
+</form>
+    </body>
+</html>
