@@ -19,7 +19,7 @@ namespace COMPUTINGNEA.Models
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "investmentnea.database.windows.net";
             builder.UserID = "maryamseraj";
-            builder.Password = "Thenextstep22!";
+            builder.Password = "************************"; 
             builder.InitialCatalog = "investmentcalc";
 
             constring = builder.ConnectionString;
