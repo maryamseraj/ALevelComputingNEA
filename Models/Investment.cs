@@ -120,7 +120,7 @@ namespace COMPUTINGNEA.Models
 
                 using (SqlCommand cmd = new SqlCommand(updateInvestment, con))
                 {
-                    cmd.Parameters.AddWithValue("@InvestmentID", 4);
+                    cmd.Parameters.AddWithValue("@InvestmentID", GetInvestmentID());
                     cmd.Parameters.AddWithValue("@InvestmentName", investmentname);
 
                     con.Open();
