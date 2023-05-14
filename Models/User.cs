@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace COMPUTINGNEA.Models
 {
-    public class User
+    public class User : sql
     {
         // defining User variables
         private int userid;
