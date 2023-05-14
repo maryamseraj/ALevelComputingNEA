@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace COMPUTINGNEA.Models
 {
-    public class User : sql
+    public class User
     {
         // defining User variables
         private int userid;
@@ -58,7 +58,7 @@ namespace COMPUTINGNEA.Models
         {
             using (SqlConnection con = new SqlConnection(Constring))
             {
-                string checkUser = "SELECT COUNT(*) FROM [dbo].[User] WHERE Email = " + "'" + email + "'" + " OR Username = @Username";
+                string checkUser = "SELECT COUNT(*) FROM [dbo].[User] WHERE Email = @Email OR Username = @Username";
 
                 using (SqlCommand cmd = new SqlCommand(checkUser, con))
                 {
@@ -154,14 +154,13 @@ namespace COMPUTINGNEA.Models
         // retrieves user id from the User table using SELECT query
         public int GetUserID()
         {
-            username = "maryamseraj";
             using (SqlConnection con = new SqlConnection(Constring))
             {
-                string userID = "SELECT UserID FROM [dbo].[User] WHERE Username = " + "'" + username + "'";
+                string userID = "SELECT UserID FROM [dbo].[User] WHERE Username = @Username";
 
                 using (SqlCommand cmd = new SqlCommand(userID, con))
                 {
-                 //   cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@Username", username);
                     con.Open();
                     int Userid = (int)cmd.ExecuteScalar();
                     return Userid;
